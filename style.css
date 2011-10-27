@@ -1,3 +1,25 @@
 * {
 	font-family: Ubuntu, sans-serif;
 }
+
+table {
+	border-spacing: 0px;
+}
+
+table td:not(:last-of-type) {
+	padding-right: 10px;
+}
+
+table tr:first-of-type {
+	font-weight: bold;
+}
+
+table tr:nth-child(even):not(.highlight) {
+	background-color: silver;
+}
+
+tr.highlight, tr.highlight a {
+	background-color: green;
+	color:white;
+	font-size:larger;
+}
