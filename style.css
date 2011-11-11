@@ -23,3 +23,8 @@ tr.highlight, tr.highlight a {
 	color:white;
 	font-size:larger;
 }
+
+img {
+	 float:right;
+	 max-width:30%;
+}
