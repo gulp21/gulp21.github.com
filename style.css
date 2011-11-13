@@ -4,6 +4,7 @@
 
 table {
 	border-spacing: 0px;
+	border: 0px;
 }
 
 table td:not(:last-of-type) {
@@ -25,6 +26,22 @@ tr.highlight, tr.highlight a {
 }
 
 img {
-	 float:right;
-	 max-width:30%;
+	float:right;
+	max-width:40%;
+	-moz-transition-duration: .5s;
+	-webkit-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	border: 0px;
+}
+
+img:hover {
+	max-width:80%;
+	-moz-transition: max-width 2s ease-in .2s;
+	-webkit-transition: max-width 2s ease-in .2s;
+	-ms-transition: max-width 2s ease-in .2s;
+	transition: max-width 2s ease-in .2s;
 }
