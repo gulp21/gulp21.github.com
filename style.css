@@ -26,22 +26,58 @@ tr.highlight, tr.highlight a {
 }
 
 img {
-	float:right;
-	max-width:40%;
 	-moz-transition-duration: .5s;
 	-webkit-transition-duration: .5s;
 	-ms-transition-duration: .5s;
 	transition-duration: .5s;
-	position: absolute;
-	right: 15px;
-	top: 15px;
 	border: 0px;
 }
 
-img:hover {
-	max-width:80%;
+#dartimg {
+	float:right;
+	max-width:40%;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+
+#dartimg:hover {
 	-moz-transition: max-width 2s ease-in .2s;
 	-webkit-transition: max-width 2s ease-in .2s;
 	-ms-transition: max-width 2s ease-in .2s;
 	transition: max-width 2s ease-in .2s;
+	max-width:80%;
+}
+
+.smallimg {
+	float:right;
+	max-height:100px;
+	-moz-transition-duration: .5s;
+	-webkit-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+	position: relative;
+	right: 15px;
+	top: -20px;
+	border: 0px;
+}
+
+.smallimg:hover {
+	-moz-transition: max-height 2s ease-in .2s;
+	-webkit-transition: max-height 2s ease-in .2s;
+	-ms-transition: max-height 2s ease-in .2s;
+	transition: max-height 2s ease-in .2s;
+	max-height: 400px;
+}
+
+.bubble {
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+.bubble > h2, .bubble > h3, .bubble > h4 {
+	margin-top: 0px;
+	margin-bottom: 3px;
 }
