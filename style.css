@@ -29,6 +29,7 @@ img {
 	-moz-transition-duration: .5s;
 	-webkit-transition-duration: .5s;
 	-ms-transition-duration: .5s;
+	-o-transition-duration: .5s;
 	transition-duration: .5s;
 	border: 0px;
 }
@@ -45,6 +46,7 @@ img {
 	-moz-transition: max-width 2s ease-in .2s;
 	-webkit-transition: max-width 2s ease-in .2s;
 	-ms-transition: max-width 2s ease-in .2s;
+	-o-transition: max-width 2s ease-in .2s;
 	transition: max-width 2s ease-in .2s;
 	max-width:80%;
 }
