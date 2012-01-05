@@ -51,25 +51,33 @@ img {
 	max-width:80%;
 }
 
-.smallimg {
+.smallimgcontainer {
 	float:right;
-	max-height:100px;
-	-moz-transition-duration: .5s;
-	-webkit-transition-duration: .5s;
-	-ms-transition-duration: .5s;
-	transition-duration: .5s;
 	position: relative;
 	right: 15px;
 	top: -20px;
+}
+
+.smallimg {
+	max-height:100px;
+	-moz-transition-duration: .5s;
+	-webkit-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+	position: absolute;
+	right: 0px;
+	top: 0px;
 	border: 0px;
 }
 
 .smallimg:hover {
+	max-height: 400px;
 	-moz-transition: max-height 2s ease-in .2s;
 	-webkit-transition: max-height 2s ease-in .2s;
+	-o-transition: max-height 2s ease-in .2s;
 	-ms-transition: max-height 2s ease-in .2s;
 	transition: max-height 2s ease-in .2s;
-	max-height: 400px;
 }
 
 .bubble {
