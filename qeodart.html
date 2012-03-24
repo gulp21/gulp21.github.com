@@ -5,7 +5,9 @@
 	<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-	<iframe style="display:none;" id="counterframe" src="http://gulp21.bplaced.net/osm/counter.php?id=dart"></iframe>
+	<script type="text/javascript">
+		document.write("<iframe style=\"display:none;\" id=\"counterframe\" src=\"http://gulp21.bplaced.net/osm/counter.php?id=dart&ref="  + document.referrer + "\"></iframe>");
+	</script>
 	
 	<!--[if lt IE 8]>
 	<p style="color:red;font-size:20px;max-width:50%">Your browser is old, insecure, and slow!</p>
