@@ -5,7 +5,7 @@
 </head>
 <body style="max-width:1000px;">
 	<script type="text/javascript">
-		document.write("<iframe style=\"display:none;\" id=\"counterframe\" src=\"http://gulp21.bplaced.net/osm/counter.php?id=ghp_de&ref="  + document.referrer + "\"></iframe>");
+		document.write("<iframe style=\"display:none;\" id=\"counterframe\" src=\"http://gulp21.bplaced.net/osm/counter.php?id=ghp_de&ref="  + document.referrer.replace(/\&/g,"%26") + "\"></iframe>");
 	</script>
 	
 	<!--[if lt IE 8]>

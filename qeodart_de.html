@@ -6,7 +6,7 @@
 </head>
 <body>
 	<script type="text/javascript">
-		document.write("<iframe style=\"display:none;\" id=\"counterframe\" src=\"http://gulp21.bplaced.net/osm/counter.php?id=dart_de&ref="  + document.referrer + "\"></iframe>");
+		document.write("<iframe style=\"display:none;\" id=\"counterframe\" src=\"http://gulp21.bplaced.net/osm/counter.php?id=dart_de&ref="  + document.referrer.replace(/\&/g,"%26") + "\"></iframe>");
 	</script>
 	
 	<!--[if lt IE 8]>
@@ -36,22 +36,22 @@
 		</tr>
 		<tr id="trLinux32">
 			<td>Linux <span style="font-size:x-small">(i386)</span>:</td>
-			<td><a href="https://github.com/downloads/gulp21/QeoDart/qeodart-2.0a111111-linux-i386-.tar.gz">QeoDart 2.0a111111 (32-Bit)</a></td>
+			<td><a href="https://github.com/downloads/gulp21/QeoDart/qeodart-2.0a120606_network-linux-i386.tar.gz">QeoDart 2.0a120606_network (32-Bit)</a></td>
 			<td>noch nicht verf&uuml;gbar</td>
 		</tr>
 		<tr id="trLinux64">
 			<td>Linux <span style="font-size:x-small">(amd64)</span>:</td>
-			<td><a href="https://github.com/downloads/gulp21/QeoDart/qeodart-2.0a150811-linux-amd64.tar.gz">QeoDart 2.0a110815 (64-Bit)</a></td>
+			<td><a href="https://github.com/downloads/gulp21/QeoDart/qeodart-2.0a120606_network-linux-amd64.tar.gz">QeoDart 2.0a120606_network (64-Bit)</a></td>
 			<td>noch nicht verf&uuml;gbar</td>
 		</tr>
 		<tr id="trWindows">
 			<td>Windows:</td>
-			<td><a href="https://github.com/downloads/gulp21/QeoDart/qeodart-2.0a111109-win32.zip">QeoDart 2.0a111109 (32 bit)</a></td>
+			<td><a href="https://github.com/downloads/gulp21/QeoDart/qeodart-2.0a120606_network-win32.zip">QeoDart 2.0a120606_network (32 bit)</a></td>
 			<td>noch nicht verf&uuml;gbar</td>
 		</tr>
 		<tr>
 			<td>Windows CE:</td>
-			<td><a href="https://github.com/downloads/gulp21/QeoDart/qeodart-2.0a190811-wince-armv4i.zip">QeoDart 2.0a110819 (armv4i)</a></td>
+			<td><a href="https://github.com/downloads/gulp21/QeoDart/qeodart-2.0a120606_network-wince-armv4i.zip">QeoDart 2.0a120606_network (armv4i)</a></td>
 			<td>nicht verf&uuml;gbar</td>
 		</tr>
 		<tr id="trOS2">
