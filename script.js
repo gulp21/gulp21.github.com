@@ -8,6 +8,8 @@ if(window.location.href.indexOf("qeodart")>-1) {
 			document.getElementById("trLinux64").className="highlight";
 			document.getElementById("trLinux32").className="highlight";
 		}
+	} else if(navigator.userAgent.toLowerCase().indexOf("os/2")>-1) {
+		document.getElementById("trOS2").className="highlight";
 	} else if(navigator.userAgent.toLowerCase().indexOf("win")>-1) {
 		document.getElementById("trWindows").className="highlight";
 	}
