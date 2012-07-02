@@ -2,6 +2,10 @@
 	font-family: Ubuntu, sans-serif;
 }
 
+p {
+	font-size: 16px;
+}
+
 table {
 	border-spacing: 0px;
 	border: 0px;
@@ -21,8 +25,9 @@ table tr:nth-child(even):not(.highlight) {
 
 tr.highlight, tr.highlight a {
 	background-color: green;
-	color:white;
-	font-size:larger;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
 }
 
 img {
@@ -36,19 +41,21 @@ img {
 
 #dartimg {
 	float:right;
-	max-width:40%;
+	max-width: 40%;
+	max-height: 240px;
 	position: absolute;
 	right: 15px;
 	top: 15px;
 }
 
 #dartimg:hover {
-	-moz-transition: max-width 2s ease-in .2s;
-	-webkit-transition: max-width 2s ease-in .2s;
-	-ms-transition: max-width 2s ease-in .2s;
-	-o-transition: max-width 2s ease-in .2s;
-	transition: max-width 2s ease-in .2s;
-	max-width:80%;
+	-moz-transition: max-width,max-height 2s ease-in .2s;
+	-webkit-transition: max-width,max-height 2s ease-in .2s;
+	-ms-transition: max-width,max-height 2s ease-in .2s;
+	-o-transition: max-width,max-height 2s ease-in .2s;
+	transition: max-width,max-height 2s ease-in .2s;
+	max-width: 80%;
+	max-height: 1000px;
 }
 
 .smallimgcontainer {
