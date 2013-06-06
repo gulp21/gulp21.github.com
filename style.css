@@ -37,6 +37,7 @@ img {
 	-o-transition-duration: .5s;
 	transition-duration: .5s;
 	border: 0px;
+	z-index: 10;
 }
 
 #dartimg {
@@ -92,6 +93,16 @@ img {
 	border-radius: 10px;
 	padding: 5px;
 	margin-bottom: 10px;
+	opacity: .8;
+	-moz-transition-duration: .5s;
+	-webkit-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+.bubble:hover {
+	opacity: 1;
 }
 
 .bubble > h2, .bubble > h3, .bubble > h4 {
