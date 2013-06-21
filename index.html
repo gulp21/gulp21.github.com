@@ -4,9 +4,9 @@
 	<meta charset="UTF-8"/>
 	<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-<body style="max-width:1000px;">
+<body>
 	<script type="text/javascript">
-		document.write("<iframe style=\"display:none;\" id=\"counterframe\" src=\"http://gulp21.bplaced.net/osm/counter.php?id=ghp&ref="  + document.referrer.replace(/\&/g,"%26") + "\"></iframe>");
+		document.write("<iframe id=\"counterframe\" src=\"http://gulp21.bplaced.net/osm/counter.php?id=ghp&ref="  + document.referrer.replace(/\&/g,"%26") + "\"></iframe>");
 	</script>
 	
 	<!--[if lt IE 8]>
@@ -23,11 +23,9 @@
 	
 	<h2>Own Projects</h2>
 	
-	<div class="bubble" style="border-color:rgb(256,168,88);background-color:rgba(256,168,88,.5)">
+	<div id="dart" class="bubble">
 	<h3>QeoDart</h3>
-	<div class="smallimgcontainer">
-		<a href="qeodart.png"><img class="smallimg" src="qeodart.png" alt="Screenshots"/></a>
-	</div>
+	<a class="smallimgcontainer" href="qeodart.png"><img class="smallimg" src="qeodart.png" alt="Screenshots of QeoDart"/></a>
 	<h4>Geography Education Game</h4>
 	<p>
 	QeoDart is a free geography education game.<br/>
@@ -37,10 +35,11 @@
 	</p>
 	</div>
 	
-	<div class="bubble" style="border-color:rgb(184,240,168);background-color:rgba(184,240,168,.5)">
+	<div id="hnrv" class="bubble">
 	<h3>housenumbervalidator</h3>
+	<a class="smallimgcontainer" href="housenumbervalidator.png"><img class="smallimg" src="housenumbervalidator.png" alt="Bildschirmfoto vom housenumbervalidator"/></a>
 	<p>
-	Validates house numbers and finds dupes in OpenStreetMap files<br/>
+	Validates house numbers and finds dupes in <a href="http://openstreetmap.org/" target="_blank">OpenStreetMap</a> files<br/>
 	<a href="http://gulp21.bplaced.net/osm/housenumbervalidator">Map</a> &mdash;
 	<a href="http://wiki.openstreetmap.org/wiki/User:Gulp21/housenumbervalidator">Wiki</a> &mdash;
 	<a href="http://forum.openstreetmap.org/viewtopic.php?id=12669">Forum</a> &mdash;
@@ -48,18 +47,40 @@
 	</p>
 	</div>
 	
-	<div class="bubble" style="border-color:rgb(152,184,240);background-color:rgba(152,184,240,.5)">
+	<div id="ltfx" class="bubble">
 	<h3>LanguageToolFx</h3>
+	<a class="smallimgcontainer" href="ltfx.png"><img class="smallimg" src="ltfx.png" alt="Bildschirmfoto von LanguageToolFx"/></a>
 	<h4>LanguageTool integration for Mozilla Firefox</h4>
 	<p>
+	Check selected text on websites or text in text fields with the free style and grammar checker LanguageTool.<br/>
 	<a href="https://addons.mozilla.org/firefox/addon/languagetoolfx/">Download</a> &mdash;
 	<a href="http://sourceforge.net/p/languagetool/code/HEAD/tree/trunk/extension/firefox/">Source</a>
 	</p>
 	</div>
 	
+	<div id="forbiddenisland" class="bubble">
+	<h3>Forbidden Island</h3>
+	<a class="smallimgcontainer" href="forbidden-island.png"><img class="smallimg" src="forbidden-island.png" alt="Screenshots of Forbidden Island"/></a>
+	<p>
+	Dry fields and get as many points as possible.<br/>
+	<a href="https://github.com/gulp21/Forbidden-Island">Source</a>
+	</p>
+	</div>
+	
+	<div id="forbiddenislandbot" class="bubble">
+	<h3>Bot for Forbidden Island</h3>
+	<p>
+	Bot for the sicth programming competition of freiesMagazin (“The Forbidden Island”/“Die verbotene Insel”)<br/>
+	<a href="https://github.com/gulp21/Forbidden-Island-Bot">Source</a> &mdash;
+	<a href="http://www.freiesmagazin.de/sechster_programmierwettbewerb">Competition [German]</a>
+	</p>
+	</div>
+	
 	<h2>Other Projects</h2>
-	<div class="bubble" style="border-color:rgb(152,184,240);background-color:rgba(152,184,240,.5)">
+	<div id="lt" class="bubble">
 	<h3>LanguageTool</h3>
+	<a class="smallimgcontainer" href="lt.png"><img class="smallimg" src="lt.png" alt="Bildschirmfoto von LanguageTool"/></a>
+	<h4>Free Grammar and Style Cecker</h4>
 	<p>
 	Free Grammar and Style Cecker for <a href="http://libreoffice.org/" target="_blank">LibreOffice</a>, <a href="http://openoffice.org/" target="_blank">Apache OpenOffice</a>, <a href="http://mozilla.org/firefox/" target="_blank">Mozilla Firefox</a>, <a href="http://mozilla.org/thunderbird/" target="_blank">Mozilla Thunderbird</a>, <a href="http://www.vim.org" target="_blank">vim</a>, <a href="http://languagetool.org/links/">just to mention a few</a><br/>
 	<a href="http://languagetool.org/" target="_blank">Website</a> &mdash;
@@ -70,7 +91,7 @@
 	
 	<h2>My Publications</h2>
 	
-	<div class="bubble" style="border-color:rgb(140,200,125);background-color:rgba(140,200,125,.5)">
+	<div id="facharb" class="bubble">
 	<h3>Ursachen für die unterschiedliche Entwicklung von Kleinkindern beim Erstspracherwerb [German]</h3>
 	<h4>Term Paper German (language development and language acquisition)</h4>
 	<p>
@@ -79,7 +100,7 @@
 	</p>
 	</div>
 	
-	<div class="bubble" style="border-color:rgb(152,184,240);background-color:rgba(152,184,240,.5)">
+	<div id="fm-lt" class="bubble"">
 	<h3>LanguageTool &ndash; Free Style and Grammar Checker</h3>
 	<p>
 	<a href="http://www.freiesmagazin.de/mobil/freiesMagazin-2012-08-bilder.html#12_08_languagetool1" target="_blank">LanguageTool &ndash; Freie Stil- und Grammatikprüfung (freiesMagazin 08/2012) [German]</a><br/>
@@ -89,7 +110,7 @@
 	</p>
 	</div>
 	
-	<div class="bubble" style="border-color:rgb(125,160,199);background-color:rgba(125,160,199,.5)">
+	<div id="fm-fxsdk" class="bubble">
 	<h3>Creating Firefox extensions with the Add-on SDK</h3>
 	<p>
 	<a href="http://www.freiesmagazin.de/mobil/freiesMagazin-2013-02-bilder.html#fm_13_02_ffox_addonsdk1" target="_blank">Teil I: Einführung (freiesMagazin 02/2013) [German]</a><br/>

@@ -2,9 +2,37 @@
 	font-family: Ubuntu, sans-serif;
 }
 
+body {
+	max-width: 1000px;
+}
+
+#counterframe {
+	display: none;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+h4 {
+	font-size: 16px;
+	font-weight: bold;
+}
+
 p {
 	font-size: 16px;
 	margin-bottom: 5px;
+	margin-top: 0px;
+	min-height: 10px;
+	max-width: calc(100% - 170px);
 }
 
 table {
@@ -16,11 +44,11 @@ table td:not(:last-of-type) {
 	padding-right: 10px;
 }
 
-table tr:first-of-type {
+thead {
 	font-weight: bold;
 }
 
-table tr:nth-child(even):not(.highlight) {
+tbody tr:nth-child(odd):not(.highlight) {
 	background-color: silver;
 }
 
@@ -38,11 +66,10 @@ img {
 	-o-transition-duration: .5s;
 	transition-duration: .5s;
 	border: 0px;
-	z-index: 10;
 }
 
 #dartimg {
-	float:right;
+	float: right;
 	max-width: 40%;
 	max-height: 240px;
 	position: absolute;
@@ -60,33 +87,12 @@ img {
 	max-height: 1000px;
 }
 
-.smallimgcontainer {
-	float:right;
-	position: relative;
-	right: 15px;
-	top: -20px;
+#tested {
+	font-size: 12px;
 }
 
-.smallimg {
-	max-height:100px;
-	-moz-transition-duration: .5s;
-	-webkit-transition-duration: .5s;
-	-o-transition-duration: .5s;
-	-ms-transition-duration: .5s;
-	transition-duration: .5s;
-	position: absolute;
-	right: 0px;
-	top: 0px;
-	border: 0px;
-}
-
-.smallimg:hover {
-	max-height: 400px;
-	-moz-transition: max-height 2s ease-in .2s;
-	-webkit-transition: max-height 2s ease-in .2s;
-	-o-transition: max-height 2s ease-in .2s;
-	-ms-transition: max-height 2s ease-in .2s;
-	transition: max-height 2s ease-in .2s;
+.arch {
+	font-size: 10px;
 }
 
 .bubble {
@@ -94,6 +100,7 @@ img {
 	border-radius: 10px;
 	padding: 5px;
 	margin-bottom: 10px;
+	position: relative;
 	opacity: .8;
 	-moz-transition-duration: .5s;
 	-webkit-transition-duration: .5s;
@@ -109,4 +116,97 @@ img {
 .bubble > h2, .bubble > h3, .bubble > h4 {
 	margin-top: 0px;
 	margin-bottom: 3px;
+}
+
+.smallimgcontainer {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	height: 100%;
+}
+
+.smallimg {
+	height: 90%;
+	height: calc(100% - 10px);
+	max-height: 150px;
+	-moz-transition-duration: .5s;
+	-webkit-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	border: 0px;
+}
+
+.smallimg:hover {
+	height: 300%;
+	max-height: 400px;
+	-moz-transition: height 1.5s ease-in .2s;
+	-webkit-transition: height 1.5s ease-in .2s;
+	-o-transition: height 1.5s ease-in .2s;
+	-ms-transition: height 1.5s ease-in .2s;
+	transition: height 1.5s ease-in .2s;
+}
+
+
+#dart {
+	border-color: rgb(256,168,88);
+	background-color: rgba(256,168,88,.5);
+}
+
+#dart .smallimg {
+	z-index: 10;
+}
+
+#hnrv {
+	border-color: rgb(184,240,168);
+	background-color: rgba(184,240,168,.5);
+}
+
+#hnrv .smallimg {
+	z-index: 9;
+}
+
+#ltfx {
+	border-color: rgb(152,184,240);
+	background-color: rgba(152,184,240,.5);
+}
+
+#ltfx .smallimg {
+	z-index: 8;
+}
+
+#forbiddenisland {
+	border-color: rgb(230,230,55);
+	background-color: rgba(230,230,55,.5);
+}
+
+#forbiddenisland .smallimg {
+	z-index: 7;
+}
+
+#forbiddenislandbot {
+	border-color: rgb(220,220,50);
+	background-color: rgba(220,220,50,.5);
+}
+
+#lt, #fm-lt {
+	border-color: rgb(152,184,240);
+	background-color: rgba(152,184,240,.5);
+}
+
+#lt .smallimg {
+	z-index: 5;
+}
+
+#facharb {
+	border-color: rgb(140,200,125);
+	background-color: rgba(140,200,125,.5);
+}
+
+#fm-fxsdk {
+	border-color: rgb(125,160,199);
+	background-color: rgba(125,160,199,.5);
 }

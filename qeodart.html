@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <head>
-	<title>QeoDart &ndash; Geography Education Game</title>
+	<meta charset="UTF-8"/>
+	<title>QeoDart – Geography Education Game</title>
 	<link rel="icon" href="https://github.com/gulp21/QeoDart/raw/master/icons/icon16.png" type="image/png"/>
 	<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
 	<script type="text/javascript">
-		document.write("<iframe style=\"display:none;\" id=\"counterframe\" src=\"http://gulp21.bplaced.net/osm/counter.php?id=dart&ref="  + document.referrer.replace(/\&/g,"%26") + "\"></iframe>");
+		document.write("<iframe id=\"counterframe\" src=\"http://gulp21.bplaced.net/osm/counter.php?id=dart&ref="  + document.referrer.replace(/\&/g,"%26") + "\"></iframe>");
 	</script>
 	
 	<!--[if lt IE 8]>
@@ -31,52 +32,56 @@
 	
 	<h2>Download</h2>
 	<table>
-		<tr>
-			<td>Operating System*</td>
-			<td>Portable Version</td>
-			<td>Installation Package</td>
-		</tr>
-		<tr id="trLinux32">
-			<td>Linux <span style="font-size:x-small">(i386)</span>:</td>
-			<td><a href="http://gulp21.bplaced.net/qeodart/downloads/qeodart-2.0a120606_network-linux-i386.tar.gz">QeoDart 2.0a120606_network (32 bit)</a></td>
-			<td><a href="http://gulp21.bplaced.net/qeodart/downloads/qeodart_2.0-120629_i386.deb">QeoDart 2.0a120629_network (Ubuntu 10.04+ 32 bit)</a></td>
-		</tr>
-		<tr id="trLinux64">
-			<td>Linux <span style="font-size:x-small">(amd64)</span>:</td>
-			<td><a href="http://gulp21.bplaced.net/qeodart/downloads/qeodart-2.0a120606_network-linux-amd64.tar.gz">QeoDart 2.0a120606_network (64 bit)</a></td>
-			<td><a href="http://gulp21.bplaced.net/qeodart/downloads/qeodart_2.0-120629_amd64.deb">QeoDart 2.0a120629_network (Ubuntu 10.04+ 64 bit)</a></td>
-		</tr>
-		<tr id="trWindows">
-			<td>Windows:</td>
-			<td><a href="http://gulp21.bplaced.net/qeodart/downloads/qeodart-2.0a120606_network-win32.zip">QeoDart 2.0a120606_network (32 bit)</a></td>
-			<td>coming soon</td>
-		</tr>
-		<tr>
-			<td>Windows CE:</td>
-			<td><a href="http://gulp21.bplaced.net/qeodart/downloads/qeodart-2.0a120606_network-wince-armv4i.zip">QeoDart 2.0a120606_network (armv4i)</a></td>
-			<td>not available</td>
-		</tr>
-		<tr id="trOS2">
-			<td>OS/2:</td>
-			<td><a href="http://svn.netlabs.org/qtapps/wiki/QT4%20Games" target="_blank">QeoDart 2.0a (unofficial)</a></td>
-			<td>not available</td>
-		</tr>
-		<tr>
-			<td>All:</td>
-			<td><a href="https://github.com/gulp21/QeoDart">Source Code</a></td>
-			<td> </td>
-		</tr>
+		<thead>
+			<tr>
+				<td>Operating System*</td>
+				<td>Portable Version</td>
+				<td>Installation Package</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr id="trLinux32">
+				<td>Linux <span class="arch">(i386)</span>:</td>
+				<td><a href="http://gulp21.bplaced.net/qeodart/downloads/qeodart-2.0a120606_network-linux-i386.tar.gz">QeoDart 2.0a120606_network (32 bit)</a></td>
+				<td><a href="http://gulp21.bplaced.net/qeodart/downloads/qeodart_2.0-120629_i386.deb">QeoDart 2.0a120629_network (Ubuntu 10.04+ 32 bit)</a></td>
+			</tr>
+			<tr id="trLinux64">
+				<td>Linux <span class="arch">(amd64)</span>:</td>
+				<td><a href="http://gulp21.bplaced.net/qeodart/downloads/qeodart-2.0a120606_network-linux-amd64.tar.gz">QeoDart 2.0a120606_network (64 bit)</a></td>
+				<td><a href="http://gulp21.bplaced.net/qeodart/downloads/qeodart_2.0-120629_amd64.deb">QeoDart 2.0a120629_network (Ubuntu 10.04+ 64 bit)</a></td>
+			</tr>
+			<tr id="trWindows">
+				<td>Windows:</td>
+				<td><a href="http://gulp21.bplaced.net/qeodart/downloads/qeodart-2.0a120606_network-win32.zip">QeoDart 2.0a120606_network (32 bit)</a></td>
+				<td>coming soon</td>
+			</tr>
+			<tr>
+				<td>Windows CE:</td>
+				<td><a href="http://gulp21.bplaced.net/qeodart/downloads/qeodart-2.0a120606_network-wince-armv4i.zip">QeoDart 2.0a120606_network (armv4i)</a></td>
+				<td>not available</td>
+			</tr>
+			<tr id="trOS2">
+				<td>OS/2:</td>
+				<td><a href="http://svn.netlabs.org/qtapps/wiki/QT4%20Games" target="_blank">QeoDart 2.0a (unofficial)</a></td>
+				<td>not available</td>
+			</tr>
+			<tr>
+				<td>All:</td>
+				<td><a href="https://github.com/gulp21/QeoDart">Source Code</a></td>
+				<td> </td>
+			</tr>
+		</tbody>
 	</table>
 	
-	<p style="font-size:small">
+	<p id="tested">
 	* tested under Kubuntu 32/64 bit (<a href="http://kubuntu.com/" target="_blank">free download</a>), Windows 7 32 bit, Windows CE Core 5.0;<br/>
-	Mac OS user can compile QeoDart using Qt Creator (<a href="http://qt.nokia.com/downloads" target="_blank">free download</a>, see <a href="https://github.com/gulp21/QeoDart/blob/master/INSTALL" target="_blank">INSTALL</a>, section &quot;Qt Creator&quot;)
+	Mac OS user can compile QeoDart using Qt Creator (<a href="http://qt.nokia.com/downloads" target="_blank">free download</a>, see <a href="https://github.com/gulp21/QeoDart/blob/master/INSTALL" target="_blank">INSTALL</a>, section “Qt Creator”)
 	</p>
 	
 	<h2>Installation</h2>
 	<h3>Portable Version</h3>
 	<ol>
-	<li>right click on downloaded file and click on &quot;Extract Archive Here&quot;, &quot;Extract All&quot; or the like</li>
+	<li>right click on downloaded file and click on “Extract Archive Here”, “Extract All”, or the like</li>
 	<li>open the folder <i>QeoDart</i></li>
 	<li>(double) click <i>QeoDart</i></li>
 	</ol>

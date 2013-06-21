@@ -15,7 +15,7 @@ if(window.location.href.indexOf("qeodart")>-1) {
 	}
 }
 
-if(navigator.language.indexOf("de")>-1 && window.location.href.indexOf("_de")==-1) {
+if(navigator.language.indexOf("de")>-1 && window.location.href.indexOf("_de")==-1 && window.location.href.indexOf("lang")==-1) {
 	if(window.location.href.indexOf(".html")==-1)
 		window.location="index_de.html";
 	else
