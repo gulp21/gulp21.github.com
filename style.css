@@ -210,3 +210,39 @@ img {
 	border-color: rgb(125,160,199);
 	background-color: rgba(125,160,199,.5);
 }
+
+#external {
+	position: fixed;
+	bottom: -1px;
+	right: -1px;
+	background: rgba(255,255,255,180);
+	opacity: .6;
+	transition: .5s;
+	font-size: 25px;
+	padding: 5px 6px 6px 7px;
+	border-radius: 5px 0px 0px 0px;
+	border: 1px solid rgba(0,0,0,.5);
+}
+
+#external:hover {
+	opacity: .9;
+}
+
+#external a {
+	text-decoration: none;
+	margin: 0px 3px;
+	opacity: .8;
+	transition: .5s;
+}
+
+#external a:hover {
+	opacity: 1;
+}
+
+#external a[href*="ohloh"] {
+	color: #333;
+}
+
+#external a[href*="github"] {
+	color: #000;
+}
