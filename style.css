@@ -141,7 +141,7 @@ img {
 }
 
 .smallimg:hover {
-	height: 300%;
+	height: 400px;
 	max-height: 400px;
 	-moz-transition: height 1.5s ease-in .2s;
 	-webkit-transition: height 1.5s ease-in .2s;
@@ -150,6 +150,9 @@ img {
 	transition: height 1.5s ease-in .2s;
 }
 
+#hnrv img, #ltfx img, #forbiddenisland img {
+	max-height: 300px !important;
+}
 
 #dart {
 	border-color: rgb(256,168,88);
@@ -175,6 +178,15 @@ img {
 }
 
 #ltfx .smallimg {
+	z-index: 8;
+}
+
+#formelquartett {
+	border-color: rgb(150,210,180);
+	background-color: rgba(150,210,180,.5);
+}
+
+#formelquartett .smallimg {
 	z-index: 8;
 }
 
