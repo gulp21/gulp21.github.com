@@ -2,7 +2,7 @@
 @font-face { font-family: DejaVuSansHalfStar; src: url("DejaVuSansHalfStar.ttf") }
 
 body {
-	font-family: "CMU Serif Medium", "CMUSerifMedium", "DejaVu Sans", "DejaVuSansHalfStar", sans;
+	font-family: "CMU Serif", "CMUSerifMedium", "DejaVu Sans", "DejaVuSansHalfStar", sans;
 }
 
 .collage {

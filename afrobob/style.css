@@ -1,0 +1,145 @@
+body {
+	background-image: url("back.png");
+	background-attachment: fixed;
+/*	background-repeat: no-repeat;
+	background-size: cover;*/
+	font-family: "Arial", sans-serif;
+	margin: 8px;
+	overflow-x: hidden;
+}
+
+p {
+	width: 60%;
+	width: calc(100% - 410px);
+	min-width: 100px;
+}
+
+#counterframe {
+	display:none;
+}
+
+#download a {
+	background-image: url('menubutton.png');
+	background-size: contain;
+	background-repeat: repeat-x;
+	font-size: 20px;
+	color: #EEEEEE;
+	padding: 5px;
+	text-decoration: none;
+}
+
+#download a:hover {
+	background-image: url('menubuttonhover.png');
+}
+
+a[href*=".tar.gz"]:before, a[href*=".zip"]:before, a[href*=".pdf"]:before {
+	background-image: url('packagetgz.png');
+	background-size: contain;
+	content: ".";
+	color: transparent;
+	padding: 0px 13px;
+	background-repeat: no-repeat;
+}
+
+a[href*=".zip"]:before {
+	background-image: url('packagezip.png');
+}
+
+a[href*=".pdf"]:before {
+	background-image: url('text.png');
+}
+
+/* 992x573 */
+
+img {
+	transition-duration: .5s;
+	border: 0px;
+}
+
+.right {
+	float: right;
+	max-width: 396px;
+	max-height: 229px;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	z-index: 10;
+	transition-duration: .5s;
+}
+
+.right:hover {
+	transition: max-width,max-height 1s ease-in .2s;
+	max-width: 992px;
+	max-height: 573px;
+}
+
+#screenshots {
+	background-color: rgba(0,0,0,.4);
+	width: 105%;
+	padding: 5px;
+	margin-right: 5px;
+/* 	left: 50px; */
+	position: relative;
+	left: -8px;
+}
+
+#screenshots img {
+	max-width: 150px;
+	transition-duration: 2s;
+	vertical-align: middle;
+}
+
+#screenshots img:hover {
+	max-width: 500px;
+}
+
+#license {
+	font-size: smaller;
+	color: #444444;
+	width: 100%
+}
+
+#license a {
+	color: #333333;
+}
+
+/* inspired by http://www.drweb.de/magazin/css3-lightbox-komplett-ohne-javascript */
+
+ul.lightbox {
+/* 	position: fixed; */
+}
+
+ul.lightbox li {
+	overflow: hidden;
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	background: rgba(0, 0, 0, 0.75);
+	transition: opacity 1s;
+	z-index: 20;
+}
+
+ul.lightbox li:target {
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+}
+
+ul.lightbox li:target a img {
+	margin-bottom: 7px;
+}
+
+ul.lightbox li:target a:first-child {
+	position: absolute;
+	top: 50%;
+	left: 50%; 
+	margin: -312px 0 0 -512px;
+	border: 15px solid #fff;
+	box-shadow:0 1px 8px #000000;
+	background-color: white;
+	color: #111111;
+	text-decoration: none;
+}

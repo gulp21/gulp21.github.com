@@ -181,6 +181,15 @@ img {
 	z-index: 8;
 }
 
+#afrobob {
+	border-color: rgb(250,100,50);
+	background-color: rgba(250,100,50,.5);
+}
+
+#afrobob .smallimg {
+	z-index: 8;
+}
+
 #formelquartett {
 	border-color: rgb(150,210,180);
 	background-color: rgba(150,210,180,.5);
