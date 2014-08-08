@@ -49,6 +49,17 @@ a[href*=".pdf"]:before {
 	background-image: url('text.png');
 }
 
+#java8 span {
+	background-color: rgba(200,0,0,.1);
+	color: rgba(20,0,0,.9);
+	padding: 2px;
+}
+
+#java8 a {
+	font-weight: bold;
+	color: rgba(100,0,0,.9);
+}
+
 /* 992x573 */
 
 img {
